@@ -1,38 +1,44 @@
 # BIMI Logo
 
-An SVG logo prepared for use with **Brand Indicators for Message Identification (BIMI)**.
+A self-contained SVG logo prepared for use with **Brand Indicators for Message Identification (BIMI)**.
 
-## Logo
+## Preview
 
 ![BIMI logo](logo-bimi.svg)
 
-The source logo is available here:
-
-- [View `logo-bimi.svg`](logo-bimi.svg)
+- [View the SVG](logo-bimi.svg)
 - [Download the raw SVG](https://raw.githubusercontent.com/hgzvt98gtk-svg/bimi-logo/main/logo-bimi.svg)
 
-## Using the logo
+## Purpose
 
-1. Confirm that you own or are authorized to use this brand logo.
-2. Confirm that the SVG meets the BIMI requirements of your email provider and receiving mail systems.
-3. Host the SVG at a stable HTTPS URL.
-4. Publish a BIMI DNS record for the sending domain that points to the hosted SVG.
+This repository contains the `logo-bimi.svg` artwork intended to be hosted by a domain that publishes a BIMI record. Use the logo only when you own it or have permission from the rights holder.
 
-Example record format:
+## Usage
+
+1. Confirm that you own or are authorized to use the logo.
+2. Host `logo-bimi.svg` at a stable HTTPS URL on the relevant domain.
+3. Publish a BIMI DNS TXT record for the sending domain.
+4. Validate the hosted SVG and DNS configuration with your email provider and a BIMI validator.
+
+Example DNS record:
 
 ```text
 default._bimi.example.com TXT "v=BIMI1; l=https://example.com/path/to/logo-bimi.svg;"
 ```
 
-Replace `example.com` and the logo URL with your own domain and hosting location. DNS configuration, sender authentication, and certificate requirements may vary by provider. This repository does not provide a BIMI certificate or guarantee mailbox-provider acceptance.
+Replace `example.com` and the SVG URL with your own domain and hosting location. Requirements can vary between receiving mail systems; BIMI may also require sender authentication and, depending on the deployment, an appropriate certificate.
 
 ## File requirements
 
-- Keep the logo as a self-contained SVG.
-- Serve it over HTTPS.
+The hosted logo should:
+
+- Remain a self-contained SVG.
+- Be served over HTTPS.
 - Avoid scripts, external resources, and unsupported SVG features.
-- Test the final hosted file with a BIMI/SVG validator before publishing it.
-- Do not modify the logo unless you have permission from its owner.
+- Preserve the intended artwork and proportions.
+- Be tested with a BIMI/SVG validator before publication.
+
+Do not modify, redistribute, or use the logo commercially without permission from the rights holder.
 
 ## Repository contents
 
@@ -42,8 +48,8 @@ Replace `example.com` and the logo URL with your own domain and hosting location
 
 ## License and trademark
 
-No license has been granted in this repository unless a separate `LICENSE` file or written agreement says otherwise. The logo may be protected by copyright or trademark rights. Obtain permission from the rights holder before using, modifying, or redistributing it.
+The repository includes a restrictive `LICENSE` file. It does not grant permission to copy, modify, distribute, publish, sublicense, or commercially use the logo without prior written permission. The logo may also be protected by trademark rights. Review the license and obtain permission before reuse.
 
 ## Contributing
 
-Please open an issue before proposing changes to the logo. Any proposed SVG should preserve the logo's appearance and remain compatible with the intended BIMI use case.
+Open an issue before proposing changes to the logo. Any proposed SVG should preserve the artwork and remain compatible with the intended BIMI use case.
