@@ -2,15 +2,20 @@
 
 ## Supported versions
 
-This repository is a small SVG asset repository and does not currently maintain multiple release branches.
+This repository is a small SVG asset repository and does not maintain multiple release branches.
 
-The project currently supports the latest version on the `main` branch.
+Security fixes are provided for the latest commit on the `main` branch only.
 
 ## Reporting a vulnerability
 
 Please do not disclose security issues publicly until they have been addressed.
 
-To report a potential security problem, open a private advisory using GitHub Security Advisories for this repository, or contact the repository owner through the GitHub profile associated with this project.
+To report a potential security problem:
+
+1. Open a private advisory using GitHub Security Advisories for this repository (preferred).
+2. If private advisories are unavailable, contact the repository owner through the GitHub profile associated with this project.
+
+Do not open a public issue for suspected vulnerabilities.
 
 Please include:
 
@@ -21,6 +26,8 @@ Please include:
 
 ## Response expectations
 
-We will review reports as quickly as possible and may ask follow-up questions if needed.
+We will acknowledge new reports as quickly as possible and may ask follow-up questions if needed.
 
-This repository is primarily a static asset repository, so most issues are expected to be non-critical unless the logo is being used in a way that affects downstream consumers or hosted resources.
+Because this repository is primarily a static asset repository, most issues are expected to be low severity unless hosting or downstream integration is affected.
+
+When a report is confirmed, we will coordinate remediation and public disclosure timing with the reporter whenever practical.
